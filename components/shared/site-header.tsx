@@ -59,7 +59,7 @@ export function SiteHeader() {
                   </Link>
                 ))}
                 <hr className="my-2" />
-                <Link href="/portal/login" onClick={() => setIsOpen(false)}>
+                <Link href="/auth/login" onClick={() => setIsOpen(false)}>
                   <Button variant="outline" className="w-full justify-start">Lawyer Portal</Button>
                 </Link>
               </nav>
@@ -103,7 +103,7 @@ export function SiteHeader() {
           <ModeToggle />
           
           <div className="flex items-center gap-2">
-            <Link href="/portal/login" className="hidden sm:inline-block">
+            <Link href="/auth/login" className="hidden sm:inline-block">
               <Button variant="ghost" size="sm" className="font-semibold">
                 Log In
               </Button>

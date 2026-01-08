@@ -9,15 +9,14 @@ export const useCreateConsultation = () => {
       // Convert string enum to number for backend
       const payload = {
         ...data,
-        caseType: parseInt(data.caseType),
-        preferredTimes: [], // Can implement time picker logic later
+        caseType: 0, // parseInt(data.caseType, 10),
+        preferredTimes: [], // TODO: implement time picker logic later
       };
       const response = await api.post('/consultations', payload);
       return response.data;
     },
     onSuccess: (data) => {
       toast.success('Consultation Request Received!');
-      // We will redirect to dashboard here in the component
     },
     onError: (error: any) => {
       toast.error(error.response?.data?.message || 'Something went wrong');

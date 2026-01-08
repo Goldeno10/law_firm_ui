@@ -5,10 +5,10 @@ export const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-  withCredentials: true, // Crucial for handling Cookies/CORS if we add them later
+  withCredentials: true,
 });
 
-// Optional: Add interceptors for error logging
+// Interceptors for error logging
 api.interceptors.response.use(
   (response) => response,
   (error) => {

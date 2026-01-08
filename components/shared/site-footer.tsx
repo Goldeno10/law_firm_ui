@@ -13,7 +13,7 @@ export function SiteFooter() {
           
           {/* Brand & Mission (Spans 2 columns) */}
           <div className="lg:col-span-2 space-y-6">
-            <div className="flex items-center gap-2 font-bold text-2xl text-primary">
+            <div className="flex items-center gap-2 font-bold text-2xl text-foreground">
               <div className="bg-primary text-primary-foreground p-1.5 rounded-lg">
                 <Scale className="h-6 w-6" />
               </div>

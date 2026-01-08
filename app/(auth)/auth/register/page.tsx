@@ -284,7 +284,7 @@ export default function RegisterPage() {
           <CardFooter className="bg-muted/50 border-t py-6 flex justify-center">
             <p className="text-sm text-muted-foreground">
               Already have an account?{' '}
-              <Link href="/portal/login" className="font-bold text-primary hover:underline">
+              <Link href="/auth/login" className="font-bold text-primary hover:underline">
                 Sign in to Portal
               </Link>
             </p>
