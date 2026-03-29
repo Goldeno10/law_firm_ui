@@ -9,7 +9,7 @@ import './globals.css';
 // Configure the Inter font with specific subsets and a CSS variable name
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-sans', // This is key for Tailwind utility classes
+  variable: '--font-sans',
 });
 
 export const metadata: Metadata = {
@@ -43,42 +43,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-
-
-
-// import type { Metadata } from 'next';
-// // import { Inter } from 'next/font/google';
-// import QueryProvider from '@/components/providers/query-provider';
-// import { Toaster } from '@/components/ui/sonner';
-// import './globals.css';
-
-// import { ThemeProvider } from "@/components/providers/theme-provider";
-// // const inter = Inter({ subsets: ['latin'] });
-
-// export const metadata: Metadata = {
-//   title: 'LawFirm Pro',
-//   description: 'Professional Legal Services',
-// };
-
-// // ... imports
-
-// // {/* <body className={inter.className}> */}
-// export default function RootLayout({ children }: { children: React.ReactNode }) {
-//   return (
-//     <html lang="en" suppressHydrationWarning>
-//       <body>
-//         <ThemeProvider
-//           attribute="class"
-//           defaultTheme="dark" // Default to Dark
-//           enableSystem
-//           disableTransitionOnChange
-//         >
-//           <QueryProvider>
-//             {children}
-//             <Toaster />
-//           </QueryProvider>
-//         </ThemeProvider>
-//       </body>
-//     </html>
-//   )
-// }
